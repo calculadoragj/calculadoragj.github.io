@@ -1,0 +1,261 @@
+
+#resgj, #inver{
+    text-align: center;
+    border: solid 5px black;
+}
+
+#resgj tbody tr, #resgj tbody tr td {
+    border: solid 5px black;
+    padding: 15px;
+    width: 50px;
+}
+
+#inver tbody tr, #inver tbody tr td {
+    border: solid 1px black;
+    padding: 15px;
+}
+
+/*Para ajustar los botones*/
+#botones {
+    margin-right: 1rem;
+}
+
+#botones2{
+    margin-bottom: 1rem;
+}
+
+body{
+	
+    font-family: 'Helvetica','PT Sans', Verdana, sans-serif;
+        background-color: #a9b1b1ec;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    h1{
+        color: rgba(0, 0, 0, 0.993);
+        font-family: 'Raleway', sans-serif;
+    }
+   
+    .Columna{
+        color: rgba(255, 248, 248, 0.911);
+        background-color: #002ffffb;
+        padding: 5px;
+        left: 10px;
+        border-radius: 10px;
+    }
+    .Fila{
+        color: rgb(255, 255, 255);
+        background-color: #002ffffb;
+        padding: 5px;
+        border-radius: 10px;
+        
+    }
+    td{
+    
+        color: rgb(241, 241, 241);
+    }
+    label{
+        color: rgb(0, 0, 0);
+        font-size: 250%;
+    }
+    .calcular{
+        color: rgba(255, 255, 255, 0.911);
+        background-color: #002ffffb;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 150%;
+        
+    }
+    .limpiar{
+        color: rgba(255, 255, 255, 0.911);
+        background-color: #002ffffb;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 150%;
+        
+        
+    
+    }
+    .container{
+        font-size: 100%;
+    }
+    .container1{
+        font-size: 140%;
+    }
+
+    .boton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 10px;
+        padding: 10px;
+        background: #141414;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: .3s ease all;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .boton span {
+        position: relative;
+        z-index: 2;
+        transition: .3s ease all;
+    }
+    
+    .boton.Calcular::after {
+        content: "";
+        text-transform: lowercase;
+        width: 100%;
+        height: 100%;
+        background: #0cb10c;
+        position: absolute;
+        z-index: 1;
+        top: -80px;
+        left: 0;
+        transition: .3s ease-in-out all;
+    }
+    
+    .boton.Calcular:hover::after {
+        top: 0;
+    }
+    
+    .boton.Limpiar::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #079ec4;
+        position: absolute;
+        z-index: 1;
+        top: -80px;
+        left: 0;
+        transition: .3s ease-in-out all;
+    }
+    
+    .boton.Limpiar:hover::after {
+        top: 0;
+    }
+    
+    .boton.Columna::after {
+        content: "";
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: #0a8d71;
+        position: absolute;
+        z-index: 1;
+        top: -80px;
+        left: 0;
+        transition: .3s ease-in-out all;
+    }
+    
+    .boton.Columna:hover::after {
+        top: 0;
+    }
+    
+    .boton.Fila::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #cc440e;
+        position: absolute;
+        z-index: 1;
+        top: -80px;
+        left: 0;
+        transition: .3s ease-in-out all;
+    }
+    
+    .boton.Fila:hover::after {
+        top: 0;
+    }
+    input{
+    font-family: 'Helvetica','PT Sans', Verdana, sans-serif;
+    background-color: white;
+    padding: 20px 1px;
+    border: solid 3px black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.boton.Base::after {
+    content: "";
+    text-transform: lowercase;
+    width: 100%;
+    height: 100%;
+    background: #a72930;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.boton.Base:hover::after {
+    top: 0;
+}
+
+.boton.Matriz::after {
+    content: "";
+    text-transform: lowercase;
+    width: 100%;
+    height: 100%;
+    background: #4f29a7;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.boton.Matriz:hover::after {
+    top: 0;
+}
+
+
+
+
+
+
+.cambio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 10px;
+    padding: 5px;
+    background: #141414;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 7.5px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+        
+}
+
+
+/*Para las tablas de resultado*/
+table.edit {
+    color: black;
+    border-width: 5px;
+    border-spacing: 0px;
+    border-color: rgb(0, 0, 0);
+    background-color: white;
+}
+
